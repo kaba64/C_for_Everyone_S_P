@@ -1,7 +1,7 @@
 CC := gcc -std=c11
 TARGET_EXEC := out
 LFLAGS  = -lm
-SRCS := stack.c
+SRCS := general.c
 OBJS=$(SRCS:.c=.o)
 
 $(TARGET_EXEC): $(OBJS)
