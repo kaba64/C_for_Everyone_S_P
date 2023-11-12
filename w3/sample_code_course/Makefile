@@ -1,7 +1,7 @@
 CC := gcc -std=c11
 TARGET_EXEC := out
 LFLAGS  = -lm
-SRCS := list.c
+SRCS := create_list.c
 OBJS=$(SRCS:.c=.o)
 
 $(TARGET_EXEC): $(OBJS)
