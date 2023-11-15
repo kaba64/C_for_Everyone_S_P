@@ -52,7 +52,7 @@ list * array_to_list(int d[],int size){
   return head;
 }
 
-void randon_data(int data[]){
+void generate_random_data(int data[]){
   for(unsigned int i=0;i<N;++i)
     data[i] = rand() % (MAXVALUE + 1);
 }
@@ -72,14 +72,14 @@ void bubble_sort(const list *h){
       if((temp->data) > (temp->next->data)) // comparison of two adjacent elements
 	swap(temp);
       temp = temp->next;
-    }while(temp->next!=ptr); // check that we reach to the end of unsorted list! 
+    }while(temp->next!=ptr); // check that we reach to the end of unsorted list
     ptr = temp;              // now we move the above check criteria one element back
-  }while(temp!=h->next);     // This is to check there was two element in the sort loop
+  }while(temp!=h->next);     // This is to check there were two elementw in the sort loop
 }
 
 int main(int argc,char *argv[]){
   int data[N];
-  randon_data(data); // initialize the random data
+  generate_random_data(data); // initialize the random data
   list *head = array_to_list(data,N);
   print_list(head,"Unsorted list");
   printf("\n");
