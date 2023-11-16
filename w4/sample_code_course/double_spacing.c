@@ -21,6 +21,8 @@ void double_space(FILE *ifp, FILE *ofp){
   }
 }
 
+/*After compiling the code, use the following on the command line to run: executable_name data_file_name*/
+
 int main(int argc, char *argv[]){
   FILE *ifp, *ofp;
   if(argc!=3){
